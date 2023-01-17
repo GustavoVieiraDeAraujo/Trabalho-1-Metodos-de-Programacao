@@ -1,5 +1,5 @@
 """
-Funções de Implementação do caso das 8 rainhas.
+Funções que implementam a verificação do caso das 8 rainhas.
 """
 
 def posiciona_rainhas_no_tabuleiro(entrada):
