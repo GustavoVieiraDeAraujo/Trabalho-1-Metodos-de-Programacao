@@ -164,9 +164,9 @@ def verificar_se_o_tabuleiro_e_solucao(entrada):
     if (verifica_se_o_tabalueiro_tem_64_posicoes(tabuleiro) and
         verifica_se_o_tabuleiro_tem_8_rainhas(tabuleiro)):
         for posicao_rainha in pega_as_posicoes_das_rainhas(tabuleiro):
-            if (verifica_as_diagonais_da_rainha(tabuleiro, posicao_rainha) and
-                verifica_as_retas_da_rainha(tabuleiro, posicao_rainha)):
-                return 1
-            return 0
+            if not (verifica_as_diagonais_da_rainha(tabuleiro, posicao_rainha) and
+                    verifica_as_retas_da_rainha(tabuleiro, posicao_rainha)):
+                return 0
+        return 1
     else:
         return -1
